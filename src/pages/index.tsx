@@ -104,7 +104,7 @@ const Map: NextPage = () => {
                   document.querySelector<HTMLTextAreaElement>('#data');
                 try {
                   if (textarea) {
-                    parseData(textarea.value);
+                    parseData(textarea.value.trim());
                   }
                 } catch (err) {
                   if (typeof err === 'object' && err !== null) {
